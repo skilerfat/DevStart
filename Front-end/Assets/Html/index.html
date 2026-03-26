@@ -5,18 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DevStart</title>
 <link rel="stylesheet" href="../Css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header class="topo">
-    <div class="logo">🎓 DevStart</div>
+    <div class="logo"><i class="fa-solid fa-graduation-cap"></i> DevStart</div>
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Login</a>
-        <a href="#">Contato</a>
+        <a   href="login.html">Login</a>
+        <a  href="contato.html">Contato</a>
+        <a class="ativo" href="index.html">Início</a>
     </nav>
 </header>
+<style>
+    .ativo {
+        font-weight: bold;
+    }
+</style>
 
 <section class="hero">
     <div class="hero-text">
@@ -24,7 +30,7 @@
         <p>Plataforma interativa de cursos online para desenvolvedores. Aprenda no seu ritmo, com os melhores instrutores e conteúdo prático.</p>
 
         <div class="botoes">
-            <button class="btn1">Começar Agora →</button>
+            <button class="btn1">Começar Agora</button>
             <button class="btn2">Saiba Mais</button>
         </div>
     </div>
@@ -59,32 +65,37 @@
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
-            <h3>Desenvolvimento Web Full Stack</h3>
-            <p>Aprenda HTML, CSS, JavaScript, React e Node.js do zero.</p>
-            <button>Ver Curso</button>
+            <h3>ADS Web Full Stack</h3>
+            <p class="ps">Aprenda HTML, CSS, JavaScript, React e Node.js do zero.</p>
+            <button class="bn">Ver Curso</button>
         </div>
-
+<style>
+    .ps {
+        font-size: 14px;
+        color: #555;
+    }
+</style>
         <div class="card">
             <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a">
             <h3>UI/UX Design Completo</h3>
-            <p>Domine Figma, design thinking e prototipagem de interfaces</p>
-            <button>Ver Curso</button>
+            <p class="ps">Domine Figma, design thinking e prototipagem de interfaces</p>
+            <button class="bn">Ver Curso</button>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
             <h3>Data Science & Analytics</h3>
-            <p>Python, análise de dados, machine learning e visualização.</p>
-            <button>Ver Curso</button>
+            <p class="ps">Python, análise de dados, machine learning e visualização.</p>
+            <button class="bn">Ver Curso</button>
         </div>
 
     </div>
 </section>
 
 <section class="cta">
-    <h2>Pronto para começar sua jornada?</h2>
+    <h2 class="h">Pronto para começar sua jornada?</h2>
     <p>Junte-se a milhares de desenvolvedores que já transformaram suas carreiras</p>
-    <button>Criar Conta Grátis →</button>
+    <button class="bn">Criar Conta Grátis</button>
 </section>
 
 <footer>
